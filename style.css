@@ -22,7 +22,7 @@ html, body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'open sans', sans-serif;
   font-size: 16px;
   background-color: #000;
   color: #fff;
@@ -44,6 +44,7 @@ a, a:hover, a:active, a:visited {
 
 #titleBar {
   position: absolute;
+  opacity: 0.9;
   top: 0;
   left: 0;
   right: 40px;
@@ -80,7 +81,7 @@ body.multiple-scenes.mobile #titleBar {
   line-height: 30px;
   padding: 5px;
   background-color: rgb(58,68,84);
-  background-color: rgba(58,68,84,0.8);
+  background-color: rgba(58,68,84,0);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -209,6 +210,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   padding: 5px;
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
+  opacity: 0.9;
 }
 
 .mobile #sceneListToggle {
@@ -274,7 +276,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 #sceneList .scenes {
   width: 100%;
   background-color: rgb(58,68,84);
-  background-color: rgba(58,68,84,0.8);
+  background-color: rgba(58,68,84,0);
 }
 
 .mobile #sceneList {
@@ -321,7 +323,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 .no-touch #sceneList .scene:hover {
   background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
+  background-color: rgba(103,115,131,0);
 }
 
 #sceneList .scene.current {
@@ -341,7 +343,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   height: 60px;
   margin-left: -30px;
   margin-top: -30px;
-  opacity: 0.9;
+  opacity: 0.1;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
