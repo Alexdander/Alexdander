@@ -27,14 +27,19 @@
       <a href="#" class="scene" data-id="2-">
         <li class="text">Гардеробная</li>
       </a>
-    
-      <a href="#" class="scene" data-id="3-">
-        <li class="text">Гостиная</li>
-      </a>
-    
-      <a href="#" class="scene" data-id="4--">
-        <li class="text">Включить свет</li>
-      </a>
+      
+	 <div>
+	 	 <a href="#" class="scene light" data-id="3-">
+	        <li class="text">Гостиная</li>
+         </a>
+		  <a href="#" id="light-off" class="scene light" data-id="7--">
+	        <li class="text"><img src="img/light-bulb-on_yellow.png"></li>
+        </a>
+         <a href="#" id="light-on" class="scene light" data-id="4--">
+	        <li class="text"><img src="img/light-bulb-on.png"></li>
+        </a>
+	 </div>	      
+
     
       <a href="#" class="scene" data-id="5-">
         <li class="text">Кухня</li>
@@ -44,9 +49,7 @@
         <li class="text">Спальня</li>
       </a>
     
-      <a href="#" class="scene" data-id="7--">
-        <li class="text">Выключить свет</li>
-      </a>
+      
     
   </ul>
 </div>
@@ -88,7 +91,22 @@
 <a href="#" id="viewOut" class="viewControlButton viewControlButton-6">
   <img class="icon" src="img/minus.png">
 </a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
 
+$(document).on('classChanged!', function(){
+	if(document.getElementById('light-on').classList.contains("current")) {
+		// alert('light on!');
+		document.getElementById('light-on').style.display="none";
+		document.getElementById('light-off').style.display="inline";
+	}
+	else{
+		// alert('light off!');
+		document.getElementById('light-off').style.display="none";
+		document.getElementById('light-on').style.display="inline";
+	}
+})
+</script>
 <script src="vendor/es5-shim.js"></script>
 <script src="vendor/eventShim.js"></script>
 <script src="vendor/classList.js"></script>

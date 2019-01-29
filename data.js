@@ -179,7 +179,7 @@ var APP_DATA = {
           "yaw": -0.6774573916725366,
           "pitch": 0.673926377409078,
           "title": "Динс 140",
-          "text": "https://www.divan.ru/product/modulnyj-divan-dins-velvet-yellow"
+          "text": "<a href='https://www.divan.ru/product/modulnyj-divan-dins-velvet-yellow'>https://www.divan.ru/product/modulnyj-divan-dins-velvet-yellow</a>"
         },
         {
           "yaw": 0.6875543271731495,

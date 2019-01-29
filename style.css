@@ -321,7 +321,23 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   line-height: 40px;
 }
 
-.no-touch #sceneList .scene:hover {
+li {
+  display:inline;
+}
+div.scene{
+  display:table;
+}
+#sceneList .scene.light {
+  display: inline;
+}
+#sceneList .scene.light {
+  display: inline;
+}
+#sceneList .scene.light .text {
+  display: inline;
+}
+
+/*.no-touch #sceneList .scene:hover {
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0);
 }
@@ -330,7 +346,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
 }
-
+*/
 /* Hide scene list when only a single scene exists */
 body.single-scene #sceneList, body.single-scene #sceneListToggle {
   display: none;

@@ -204,6 +204,7 @@
         el.classList.remove('current');
       }
     }
+    $(document).trigger('classChanged!');
   }
 
   function showSceneList() {
